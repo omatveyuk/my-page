@@ -20,11 +20,15 @@
     margin: 0px;
   }
 
+  #section1 p {
+    padding-bottom: 10px;
+  }
+
   .t {
     /*color: #687a8f;*/
     color: #F7882F;
     font-weight: bold;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
   }
 
   .navbar-default {
@@ -72,7 +76,7 @@
   }
 
   .section {
-    padding: 50px 30px 0px 30px;
+    padding: 40px 30px 0px 30px;
     height: 700px;
     overflow: scroll;
     background-color: #FFFFFF;
@@ -80,11 +84,36 @@
     font-size: 16px;
   }
 
+  .new-caption-area {
+    width: 550px;
+    height: 120px;
+    margin: auto;
+    padding-top: 30px;
+    color: #000000;
+    overflow: scroll;
+  }
+
   #section1 {
-    background-image:url('http://res.cloudinary.com/oxanamatveyuk/image/upload/v1497580381/golden-gate-bridge-690264_1920_e0ahob.jpg'); 
+    background-image:url('static/golden1.jpg'); 
     background-color: transparent; 
     background-size:contain; 
     background-repeat:no-repeat;
+  }
+
+  #section21 {
+    height: 800px;
+  }
+
+  #section21 .new-caption-area {
+    height: 200px;
+  }
+
+  #section 22 {
+    height: 740px; 
+  }
+
+  #section22 .new-caption-area {
+    height: 160px;
   }
 
   .carousel-inner {
@@ -93,13 +122,13 @@
 
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-    width: 530px;
-    height: 330px;
+    width: 550px;
+    height: 342px;
     margin: auto;
   }
 
   .carousel-indicators {
-    top: 330px;
+    top: 350px;
 }
   ol {
     margin: 10px 0px 10px 0px;
@@ -117,18 +146,10 @@
   }
 
   .carousel-control {
-    background-color: #687a8f;
+    /*background-color: #687a8f;*/
+    background-color: #8998a9;
+    width: 70px;
   }
-
-  .new-caption-area {
-    width: 530px;
-    height: 120px;
-    margin: auto;
-    padding-top: 30px;
-    color: #000000;
-    overflow: scroll;
-  }
-
   
   @media screen and (max-width: 810px) {
 
@@ -167,11 +188,11 @@
     <div class="col-xs-8 col-xs-offset-4" style="margin-top: 200px;">
       <h1 style="color:#F7882F">About me</h1>
       <p>Hi,</p> 
-      <p class="text-justify">My name is Oxana. I am from Moscow, but now I live in San Francisco. Both cities are lovely home for me.</p>
+      <p class="text-justify">My name is Oxana. I am from Moscow, and now I live in San Francisco. Both cities are lovely home for me.</p>
 
       <p class="text-justify">I graduated from <a href="https://en.mai.ru/">Moscow Aviation Institute</a> with degree in Computer science. I began my career as a software developer for an aviation company, and then worked as Tech Lead for a bank. In both roles, I had the opportunity to make significant software contributions as I helped both companies develop their first accounting systems.</p>
 
-      <p class="text-justify">After moving to USA in 2011 I enrolled in <a href="https://www.ccsf.edu/en/educational-programs/school-and-departments/school-of-science-and-mathematics/computer-science.html">City College of San Francisco computer science certification program</a> to further my education and learn the latest software technologies and languages. I got C++ certificate, MySQL Database certificate, IOS development certificate.</p>
+      <p class="text-justify">After moving to USA in 2011 I enrolled in <a href="https://www.ccsf.edu/en/educational-programs/school-and-departments/school-of-science-and-mathematics/computer-science.html">City College of San Francisco computer science certification program</a> to further my education and learn the latest software technologies and languages. I got certificates in C++, MySQL Database and IOS development.</p>
 
       <p class="text-justify">I have just completed a three-month software engineering intensive program at <a href="https://hackbrightacademy.com/">Hackbright Academy</a> where I learned Python, JavaScript, SQL, HTML/CSS, and various libraries and frameworks. It was very interesting and helpfull programm where students shared academic and practical experience!</p>
 
@@ -182,11 +203,11 @@
 </div>
 
 <!-- Cinemania -->
-<div id="section21" class="container-fluid section" style="height:800px">  <!-- section 21 -->
+<div id="section21" class="container-fluid section">  <!-- section 21 -->
 
   <h1>Cinemania</h1>
   <p>
-    <span><a href="" >Cinemania</a></span>
+    <span><a href="http://cinemania.matveyuk.com" >Cinemania</a></span>
     <span><a href="https://github.com/omatveyuk/cinemania" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
   </p>
   <p><span class="t">Backend:</span> Python, Flask, PostgreSQL, SQLAlchemy<br/>
@@ -257,7 +278,8 @@
         <a class="right carousel-control" href="#carousel-cinemania" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-        <div class="new-caption-area" style="height:200px"></div>
+        <!-- <div class="new-caption-area" style="height:200px"></div> -->
+        <div class="new-caption-area"></div>
       </div>
     </div>  
   </div>  <!--carousel row-->
@@ -265,17 +287,75 @@
 </div>  <!-- section 21 -->
 
 
+<!-- Mosaic -->
 <div id="section22" class="container-fluid section">
-  <h1>Section 2 Submenu 2</h1>
-  <p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p>
+
+  <h1>Mosaic</h1>
+  <p>
+    <span><a href="http://mosaic.matveyuk.com" >Mosaic</a></span>
+    <span><a href="https://github.com/omatveyuk/mosaic" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
+  </p>
+  <p><span class="t">Technologies:</span> JavaScript, jQuery, AJAX, Angular, HTML5, CSS3, Bootstrap.</p>  
+  <p>This app allows a user to replicate a board from gallery. The user can change color of tiles (after choosing a color in pallete) by clicking on tiles in playground.</p>
+
+<div class="row"> <!-- carousel row-->
+    <div class="col-xs-8 col-xs-offset-2">
+      <div id="carousel-mosaic" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-mosaic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-mosaic" data-slide-to="1"></li>
+          <li data-target="#carousel-mosaic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+          <div class="item active">
+            <img src="http://res.cloudinary.com/oxanamatveyuk/image/upload/v1497896957/Screen_Shot_2017-06-19_at_11.16.18_AM_kgulkj.png" alt="Mosaic" >
+            <div class="carousel-caption">
+              <h3>Homepage</h3>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://res.cloudinary.com/oxanamatveyuk/image/upload/v1497896956/Screen_Shot_2017-06-19_at_11.16.31_AM_gkvi5a.png" alt="Mosaic">
+            <div class="carousel-caption">
+              <h3>Gallery</h3>
+              <p class="text-justify">A user can choose a board from a gallery as an example for drawing.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="http://res.cloudinary.com/oxanamatveyuk/image/upload/v1497896953/Screen_Shot_2017-06-19_at_11.18.03_AM_tz02vt.png" alt="Mosaic">
+            <div class="carousel-caption">
+              <h3>Playground</h3>
+              <p class="text-justify">For drawing a replication of the board from the gallery the user chooses a color in the pallete. The color of the tile will be changed on-click.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#carousel-mosaic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-mosaic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <div class="new-caption-area"></div>
+      </div>
+    </div>  
+  </div>  <!--carousel row-->
+
 </div>
+
 
 <!-- San Francisco -->
 <div id="section23" class="container-fluid section"> <!-- section 23 -->
 
   <h1>San Francisco</h1>
   <p>
-    <span><a href="" >San Francisco History</a></span>
+    <span><a href="https://san-francisco.herokuapp.com/san_francisco.html" >San Francisco History</a></span>
     <span><a href="https://github.com/omatveyuk/web-projects" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
   </p>
   <p>Simple web-page is created by using HTML5, CSS3, Bootstrap.</p>
@@ -326,14 +406,16 @@
 
 <!-- Quotes -->
 <div id="section24" class="container-fluid section">  <!-- section24 -->
+
   <h1>Quotes</h1>
   <p>
-    <span><a href="" >Quotes</a></span>
+    <span><a href="http://quotes.matveyuk.com" >Quotes</a></span>
     <span><a href="https://github.com/omatveyuk/web-projects" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
   </p>
-  <p><span class="t">Technologies:</span> JavaScript, jQuery, AJAX, HTML5, CSS3.</p>  
+  <p><span class="t">Technologies:</span> JavaScript, jQuery, AJAX, HTML5, CSS3, Bootstrap.</p>  
   <p><span class="t">API:</span> Quotesondesign, Twitter.</p>
   <p>User can see a random quote by clicking on button. Also User can tweet out a quote.</p>
+
   <div class="row"> <!-- carousel row-->
     <div class="col-xs-8 col-xs-offset-2">
       <div id="carousel-quotes" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -374,6 +456,7 @@
       </div>
     </div>  
   </div>  <!--carousel row-->
+
 </div>  <!-- section24 -->
 
 
