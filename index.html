@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,134 +13,168 @@
   body {
     position: relative;
     font-family: 'Montserrat', sans-serif;
-  }
-
-  p {
-    margin: 0px;
-  }
-
-  hr {
-    border-color:#687a8f;
-    border-width: 2px;
-  }
-
-  #section1 p {
-    padding-bottom: 10px;
-  }
-
-  .t {
-    /*color: #687a8f;*/
-    color: #F7882F;
-    font-weight: bold;
-    /*text-decoration: underline;*/
-  }
-
-  .navbar-default {
-    background-color: #FFFFFF;
-    border-color: #687a8f;
-    border-width: 3px 0px 0px 0px;
-  }
-
-  .navbar-fixed-top {
-    color: #FFFFFF;
-    background-color: #687a8f;
+    /*padding-top: 50px; */
   }
 
   h1, h3 {
     font-weight: bold;
     text-align: left;
-    color:#687a8f;
+    color:#687A8F;
   }
 
-  .navbar-brand:focus, .navbar-brand:hover, .navbar-brand {
+  hr {
+    border-color:#687A8F;
+    border-width: 2px;
+  }
+
+  footer {
+    margin: 15px;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #F67409;
+  }
+
+  /* navigation bar */
+  .navbar-default {
+    color: #FFFFFF;
+    background-color: #687A8F;
+    border-color: #687A8F;
+  }
+
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-brand:hover,
+  .navbar-default .navbar-brand:focus {
     color: #FFFFFF;
     font-weight: bold;
+    padding: 15px 30px 5px 30px;
+    font-size: 25px;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>li>a {
     background-color: transparent;
-  }
-
-  .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-    color: #FFFFFF;
-    text-decoration: none;
-    background-color: #687a8f;
-  }
-
-  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #000000;
-    text-decoration: none;
-    background-color: #e1e5ea;
-  }
-
-  .nav>li>a {
     color: #FFFFFF;
   }
 
-  .nav>li>a:focus, .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
-    text-decoration: none;
-    background-color: #F7882F;
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover,
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a:hover {
+    color: #F67409;
+    font-weight: bold;
+    background-color: #E7E7E7;
+    border-radius: 4px;
   }
 
-  .section {
-    padding: 40px 30px 0px 30px;
-    height: 780px;
-    overflow: scroll;
+  .dropdown-menu>li>a:focus,
+  .dropdown-menu>li>a:hover {
+    color: #F67409;
+  }
+
+  .dropdown-menu>.active>a,
+  .dropdown-menu>.active>a:focus,
+  .dropdown-menu>.active>a:hover {
+    color: #FFFFFF;
+    background-color: #687A8F;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: #FFFFFF;
+  } 
+
+  .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFFFFF;
+  }
+
+
+  /* sections */
+  .section {
+    padding: 10px 30px 0px 30px;
+    width: 100%;
     color: #000000;
     font-size: 16px;
   }
 
+  #section-start {
+    padding-top: 150px;
+    background-color: #687A8F;
+  }
+
+  #section1 {
+    padding: 50px 140px 50px 140px;
+    background-color: #687A8F;
+  }
+
+  #section1>.container-fluid {
+    padding: 30px;
+    background-color: #FFFFFF; 
+    border-radius: 4px;
+  }
+
+  #my-reference>a {
+    padding-right: 20px;
+  }
+
+  #my-photo {
+    width: 33%;
+    float:left;
+    border:10px solid #F67409;
+    border-radius: 50%;
+    margin: 0px 30px 30px 0px;
+  }
+
+  .t {
+    color: #F67409;
+    font-weight: bold;
+  }
+
+  /* carousel */
   .carousel-row {
     margin-top: 15px;
+    display: table;
+  }
+
+  .carousel-section, .carousel-new-caption {
+      margin: auto;
+      color: #000;
+      display: table-cell;
+      vertical-align: top;
+  }
+
+  .carousel-section {
+    width: 60%;
+  }
+
+  .carousel-new-caption {
+    width: 40%;
+    overflow: hidden;
+  }
+
+  .carousel-caption {
+    display: none;
   }
 
   .new-caption-area {
     overflow: hidden;     /* for using animation slideDown without jumping */
   }
 
-  #section1 {
-    background-image:url('static/golden1.jpg'); 
-    background-color: transparent; 
-    background-size:contain; 
-    background-repeat:no-repeat;
-  }
-
-  #section25{
-   height: 20px; 
-  }
-
-  .carousel-inner {
-    height: 460px;
-  }
-
-  .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
     margin:auto;
     padding: 0;
-}
-
-  .carousel-indicators {
-    bottom: 5px;
+    width: 85%;
   }
 
-  .carousel-indicators li {
-    background-color: #687a8f;
-    border: 1px solid #687a8f;
-    border-radius: 10px;
-  }
-
-  .carousel-indicators .active {
-    background-color: #F7882F;
-    border: 1px solid #F7882F;
-    border-radius: 12px;
-  }
-
-  .carousel-control, .carousel-control.left, .carousel-control.right{
+  .carousel-control,
+  .carousel-control.left,
+  .carousel-control.right {
     background: none;
     color:  #687a8f;
     width: 0;
     opacity: 1;
-  }
-
-  .carousel-control.left:hover, .carousel-control.right:hover {
-    color:  #F7882F;
+    text-shadow: none;
   }
 
   .carousel-control.left {
@@ -151,31 +184,140 @@
   .carousel-control.right {
     margin-right: 5%;
   }
-  
+    
+  .carousel-control.left:hover,
+  .carousel-control.right:hover {
+    color:  #F67409;
+  }
 
+  /* move indicators below image---- */
+  .carousel-inner {
+    margin-bottom: 40px;
+  }
+  .carousel-indicators {
+    bottom: -40px;
+  }
+  /*----*/
 
-  /*@media (min-width: 769px) and (max-width: 992px) {*/
-  @media screen and (max-width: 810px) {
+  .carousel-indicators li {
+    background-color: #687a8f;
+    border: 1px solid #687a8f;
+    border-radius: 10px;
+  }
+
+  .carousel-indicators .active {
+    background-color: #F67409;
+    border: 1px solid #F67409;
+    border-radius: 12px;
+  }
+
+  /* landscape phones and portrait tablets */
+  @media (max-width: 768px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      color: #FFFFFF;
+      background: #687A8F;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+      color: #F67409;
+      background-color: #E7E7E7;
+    }
+    #section1 {
+      padding: 20px 70px 20px 70px;
+    }
+
+    #section1 h1 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 140%;
+    }
+
+    h3 {
+      font-size: 100%;
+      margin-top: 0px;
+    }
+
+    #my-photo {
+      width: 75%;
+      float: none;
+      border:8px solid #F67409;
+      margin: 0px
+    }
+
+    /* carousel */
+    .carousel-section, .carousel-new-caption {
+      display: table-row;
+    }
+    .carousel-new-caption>hr {
+      display: none;
+    }
 
   }
-  /*for tablets*/
-  @media screen and (min-width: 600px) {
 
+  /* landscape phones and small devices */
+  @media (max-width: 480px) {
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus
+    {
+      font-size: 140%;
+    }
+
+    .section {
+      font-size: 100%;
+    }
+    #section1 {
+      padding: 20px 30px 20px 30px;
+    }
+
+    #section1>.container-fluid {
+      padding: 15px;
+    }
+
+    #my-photo {
+      border:5px solid #F67409;
+    }
+
+    #my-reference>a {
+      padding-right: 8px;
+    }
+
+    /* carousel */
+    .carousel-indicators li {
+      background-color: #687a8f;
+      border: 1px solid #687a8f;
+      border-radius: 6px;
+    }
+
+    .carousel-indicators .active {
+      background-color: #F67409;
+      border: 1px solid #F67409;
+      border-radius: 8px;
+    }
   }
+
   </style>
 </head>
-
 <body>
 
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-fixed-top navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header navbar-brand">
-      Oxana Matveyuk
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="myNavbarButton">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <div class="navbar-brand" href="#">Oxana Matveyuk</div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#section1">About me</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+        <li class="active"><a href="#section1">About me</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#section21">Cinemania</a></li>
             <li><a href="#section22">Mosaic</a></li>
@@ -186,26 +328,36 @@
       </ul>
     </div>
   </div>
-</nav>    
+</nav>
 
-<div id="section1" class="container-fluid section">
-  <div class="row">
-    <div class="col-xs-8 col-xs-offset-4" style="margin-top: 200px;">
-      <h1 style="color:#F7882F">About me</h1>
-      <p>Hi,</p> 
-      <p class="text-justify">My name is Oxana. I am from Moscow, and now I live in San Francisco. Both cities are lovely home for me.</p>
+<div id="section-start" class="section"></div>
 
-      <p class="text-justify">I graduated from <a href="https://en.mai.ru/">Moscow Aviation Institute</a> with degree in Computer science. I began my career as a software developer for an aviation company, and then worked as Tech Lead for a bank. In both roles, I had the opportunity to make significant software contributions as I helped both companies develop their first accounting systems.</p>
+<div id="section1" class="section">
 
-      <p class="text-justify">After moving to USA in 2011 I enrolled in <a href="https://www.ccsf.edu/en/educational-programs/school-and-departments/school-of-science-and-mathematics/computer-science.html">City College of San Francisco computer science certification program</a> to further my education and learn the latest software technologies and languages. I got certificates in C++, MySQL Database and IOS development.</p>
-
-      <p class="text-justify">I have just completed a three-month software engineering intensive program at <a href="https://hackbrightacademy.com/">Hackbright Academy</a> where I learned Python, JavaScript, SQL, HTML/CSS, and various libraries and frameworks. It was very interesting and helpfull programm where students shared academic and practical experience!</p>
-
-      <p class="text-justify"> Now, I’m seeking to return to the work force as a software engineer and contribute the same focus and ownership over my work that has led me to success in my previous career.</p>
-
+  <div class="container-fluid">
+    <div align="center">
+      <img id="my-photo" src="http://res.cloudinary.com/oxanamatveyuk/image/upload/v1500859269/square_vjmmue.jpg" alt="My photo" >
     </div>
+    <h1 style="color:#F67409">About me</h1>
+    <p id="my-reference">          
+      <a href="https://github.com/omatveyuk"><i class="fa fa-github"></i><span style="padding-left: 5px">Github</span></a>
+      <a href="https://www.linkedin.com/in/oxana-matveyuk/"><i class="fa fa-linkedin"></i><span style="padding-left: 5px">LinkedIn</span></a>
+      <a href="static/Oxana_Matveyuk_Resume.pdf"><i class="fa fa-file-pdf-o"></i><span style="padding-left: 5px">Resume</span></a>
+    </p>
+
+    <p>Hi,</p> 
+    <p class="text-justify">My name is Oxana. I am from Moscow, and now I live in San Francisco. Both cities are lovely home for me.</p>
+
+    <p class="text-justify">I graduated from <a href="https://en.mai.ru/">Moscow Aviation Institute</a> with degree in Computer science. I began my career as a software developer for an aviation company, and then worked as Tech Lead for a bank. In both roles, I had the opportunity to make significant software contributions as I helped both companies develop their first accounting systems.</p>
+
+    <p class="text-justify">After moving to USA in 2011 I enrolled in <a href="https://www.ccsf.edu/en/educational-programs/school-and-departments/school-of-science-and-mathematics/computer-science.html">City College of San Francisco computer science certification program</a> to further my education and learn the latest software technologies and languages. I got certificates in C++, MySQL Database and IOS development.</p>
+
+    <p class="text-justify">I have just completed a three-month software engineering intensive program at <a href="https://hackbrightacademy.com/">Hackbright Academy</a> where I learned Python, JavaScript, SQL, HTML/CSS, and various libraries and frameworks. It was very interesting and helpfull program where students shared academic and practical experience!</p>
+
+    <p class="text-justify"> Now, I’m seeking to return to the work force as a software engineer and contribute the same focus and ownership over my work that has led me to success in my previous career.</p>
+
   </div>
-</div>
+</div>  <!-- section1 -->
 
 <!-- Cinemania -->
 <div id="section21" class="container-fluid section">  <!-- section 21 -->
@@ -215,30 +367,29 @@
     <span><a href="http://cinemania.matveyuk.com" >Cinemania</a></span>
     <span><a href="https://github.com/omatveyuk/cinemania" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
   </p>
-  <p><span class="t">Backend:</span> Python, Flask, PostgreSQL, SQLAlchemy<br/>
+  <p><span class="t">Backend:</span> Python, Flask, PostgreSQL, SQLAlchemy, Redis<br/>
      <span class="t">Frontend:</span> JavaScript, jQuery, AJAX, Jinja2, Bootstrap, HTML5, CSS3, D3</p>  
   <p><span class="t">APIs:</span> Themoviedb, Facebook (OAuth).</p>
-  <p>Web-application Cinemania bridges together my passion for movies and coding. The application suggests a movie at random adding element of serendipity. Suggestions are driven by the user's genre preferences and popularity. </p>
+  <p class="text-justify">Web-application Cinemania bridges together my passion for movies and coding. The application suggests a movie at random adding element of serendipity. Suggestions are driven by the user's genre preferences and popularity. </p>
 
-  <div class="row carousel-row"> <!-- carousel-row -->
-    <div id="carousel-cinemania" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="col-xs-7">
+  <div class="carousel-row">
+    <div class="carousel-section">
+      <div id="carousel-cinemania" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#carousel-cinemania" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-cinemania" data-slide-to="1"></li>
-          <li data-target="#carousel-cinemania" data-slide-to="2"></li>
-          <li data-target="#carousel-cinemania" data-slide-to="3"></li>
-          <li data-target="#carousel-cinemania" data-slide-to="4"></li>
+          <li data-target="#carousel-cinemania" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-cinemania" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-cinemania" data-slide-to="3" class=""></li>
+          <li data-target="#carousel-cinemania" data-slide-to="4" class=""></li>
         </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
 
           <div class="item active">
             <img class="img-responsive img-thumbnail" src="https://cloud.githubusercontent.com/assets/10794461/23692569/66504c64-0384-11e7-8870-dc9abe1d191b.png" alt="Cinemania" >
             <div class="carousel-caption">
               <h3>Homepage</h3>
+              <p class="text-justify">Using Redis for long-running task such as fetching a movie.</p>
             </div>
           </div>
 
@@ -273,25 +424,25 @@
               <p class="text-justify">Finally, users can always re-visit movie's history in their profile and update ratings.</p>
             </div>
           </div>
+        </div>  <!--carousel-inner-->
 
-        </div>
-
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#carousel-cinemania" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#carousel-cinemania" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
-      <div class="col-xs-5">
-        <hr>
-        <div class="new-caption-area"></div>
-      </div>
-    </div>  
-  </div>  <!--carousel row-->  
 
-</div>  <!-- section 21 -->
+      </div>    <!-- carousel-cinemania -->
+    </div>  <!-- carousel-section -->
+
+    <div class="carousel-new-caption">
+      <hr>
+      <div class="new-caption-area"></div>
+    </div>
+  </div>  <!-- carousel-row -->  
+</div>  <!-- section 21 Cinemania -->
+<hr>
 
 
 <!-- Mosaic -->
@@ -303,20 +454,18 @@
     <span><a href="https://github.com/omatveyuk/mosaic" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
   </p>
   <p><span class="t">Technologies:</span> JavaScript, jQuery, AJAX, Angular, HTML5, CSS3, Bootstrap.</p>  
-  <p>This app allows a user to replicate a board from gallery. The user can change color of tiles (after choosing a color in pallete) by clicking on tiles in playground.</p>
+  <p class="text-justify">This app allows a user to replicate a board from gallery. The user can change color of tiles (after choosing a color in pallete) by clicking on tiles in playground.</p>
 
-  <div class="row carousel-row"> <!-- carousel-row -->
-    <div id="carousel-mosaic" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="col-xs-7">
+  <div class="carousel-row">
+    <div class="carousel-section">
+      <div id="carousel-mosaic" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#carousel-mosaic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-mosaic" data-slide-to="1"></li>
-          <li data-target="#carousel-mosaic" data-slide-to="2"></li>
+          <li data-target="#carousel-mosaic" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-mosaic" data-slide-to="2" class=""></li>
         </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
 
           <div class="item active">
             <img class="img-responsive img-thumbnail" src="http://res.cloudinary.com/oxanamatveyuk/image/upload/v1498174990/Screen_Shot_2017-06-22_at_4.39.53_PM_t1ipgc.png" alt="Mosaic" >
@@ -336,29 +485,28 @@
           <div class="item">
             <img class="img-responsive img-thumbnail" src="http://res.cloudinary.com/oxanamatveyuk/image/upload/v1498174990/Screen_Shot_2017-06-22_at_4.42.11_PM_brqh4j.png" alt="Mosaic">
             <div class="carousel-caption">
-              <h3>Playground</h3>
-              <p class="text-justify">For drawing a replication of the board from the gallery the user chooses a color in the pallete. The color of the tile will be changed on-click.</p>
+            <h3>Playground</h3>
+            <p class="text-justify">For drawing a replication of the board from the gallery the user chooses a color in the pallete. The color of the tile will be changed on-click.</p>
             </div>
           </div>
+        </div>  <!--carousel-inner-->
 
-        </div>
-
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#carousel-mosaic" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#carousel-mosaic" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
-      <div class="col-xs-5">
-        <hr>
-        <div class="new-caption-area"></div>
-      </div>
-    </div>  
-  </div>  <!--carousel row-->
 
-</div>
+      </div>    <!-- carousel-mosaic -->
+    </div>  <!-- carousel-section -->
+    <div class="carousel-new-caption">
+      <hr>
+      <div class="new-caption-area"></div>
+    </div>
+  </div>  <!-- carousel-row -->
+</div>  <!-- section22 Mosaic -->
+<hr>
 
 
 <!-- Quotes -->
@@ -371,19 +519,17 @@
   </p>
   <p><span class="t">Technologies:</span> JavaScript, jQuery, AJAX, HTML5, CSS3, Bootstrap.</p>  
   <p><span class="t">API:</span> Quotesondesign, Twitter.</p>
-  <p>User can see a random quote by clicking on button. Also User can tweet out a quote.</p>
+  <p class="text-justify">User can see a random quote by clicking on button. Also User can tweet out a quote.</p>
 
-  <div class="row carousel-row"> <!-- carousel-row -->
-    <div id="carousel-quotes" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="col-xs-7">
+  <div class="carousel-row">
+    <div class="carousel-section">
+      <div id="carousel-quotes" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#carousel-quotes" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-quotes" data-slide-to="1"></li>
+          <li data-target="#carousel-quotes" data-slide-to="1" class=""></li>
         </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
 
           <div class="item active">
             <img class="img-responsive img-thumbnail" src="https://cloud.githubusercontent.com/assets/10794461/25506302/c229c85a-2b5a-11e7-97c8-beee685f2cde.png" alt="Quotes" >
@@ -400,25 +546,24 @@
               <p class="text-justify">Post the quote on Twitter.</p>
             </div>
           </div>
+        </div>  <!--carousel-inner-->
 
-        </div>
-
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#carousel-quotes" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#carousel-quotes" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
-      <div class="col-xs-5">
-        <hr>
-        <div class="new-caption-area"></div>
-      </div>
-    </div>  
-  </div>  <!--carousel row-->   
 
-</div> <!-- section23 -->
+      </div>    <!-- carousel-quotes -->
+    </div>  <!-- carousel-section -->
+    <div class="carousel-new-caption">
+      <hr>
+      <div class="new-caption-area"></div>
+    </div>
+  </div>  <!-- carousel-row -->
+</div>  <!-- section23 Quotes -->
+<hr>
 
 
 <!-- San Francisco -->
@@ -429,19 +574,17 @@
     <span><a href="https://san-francisco.herokuapp.com/san_francisco.html" >San Francisco History</a></span>
     <span><a href="https://github.com/omatveyuk/web-projects" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a></span>
   </p>
-  <p>Simple web-page is created by using HTML5, CSS3, Bootstrap.</p>
+  <p class="text-justify">Simple web-page is created by using HTML5, CSS3, Bootstrap.</p>
 
-  <div class="row carousel-row"> <!-- carousel-row -->
-    <div id="carousel-san-francisco" class="carousel slide" data-ride="carousel" data-interval="false">
-      <div class="col-xs-7">
+  <div class="carousel-row">
+    <div class="carousel-section">
+      <div id="carousel-sf" class="carousel slide" data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-          <li data-target="#carousel-san-francisco" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-san-francisco" data-slide-to="1"></li>
+          <li data-target="#carousel-sf" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-sf" data-slide-to="1" class=""></li>
         </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
 
           <div class="item active">
             <img class="img-responsive img-thumbnail" src="https://cloud.githubusercontent.com/assets/10794461/25506331/e19b16c6-2b5a-11e7-81be-eaa1609d5beb.png" alt="San Francisco" >
@@ -458,84 +601,99 @@
               <p class="text-justify">Bootstrap carousel and JQuery are used for the gallery .</p>
             </div>
           </div>
+        </div>  <!--carousel-inner-->
 
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#carousel-san-francisco" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-sf" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#carousel-san-francisco" data-slide="next">
+        <a class="right carousel-control" href="#carousel-sf" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div>
-      <div class="col-xs-5">
-        <hr>
-        <div class="new-caption-area"></div>
-      </div>
-    </div>  
-  </div>  <!--carousel row--> 
 
-</div>  <!-- section24 -->
-
-
-<div id="section25" class="container-fluid section"> </div>
-
-
-<div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container-fluid">
-      <p class="navbar-text pull-left">Developed By Oxana Matveyuk 
-
-      <a href="https://github.com/omatveyuk" style="padding-left: 20px"><i class="fa fa-github"></i><span style="padding-left: 10px">Github</span></a>
-      <a href="https://www.linkedin.com/in/oxana-matveyuk/" style="padding-left: 20px"><i class="fa fa-linkedin"></i><span style="padding-left: 10px">LinkedIn</span></a>
-
-      </p>
+      </div>    <!-- carousel-sf -->
+    </div>  <!-- carousel-section -->
+    <div class="carousel-new-caption">
+      <hr>
+      <div class="new-caption-area"></div>
     </div>
-</div>
+  </div>  <!-- carousel-row -->
+</div>  <!-- section24 San Francisco -->
+<hr>
 
+<div id="section-end" class="section"></div>
+
+<footer>
+  <span style="display: inline-block; padding-right: 20px">Developed By Oxana Matveyuk</span> 
+  <span style="display: inline-block">
+    <a href="https://github.com/omatveyuk" style="padding-right: 20px"><i class="fa fa-github"></i><span style="padding-left: 5px">Github</span></a>
+    <a href="https://www.linkedin.com/in/oxana-matveyuk/" style="padding-right: 20px"><i class="fa fa-linkedin"></i><span style="padding-left: 5px">LinkedIn</span></a>
+    <a href="static/Oxana_Matveyuk_Resume.pdf"><i class="fa fa-file-pdf-o"></i><span style="padding-left: 5px">Resume</span></a>
+  </span>
+</footer>
 <script>
-  $(document).ready(function(){
-    $('body').scrollspy({target: ".navbar", offset: 50});
+$(document).ready(function(){
+  // An offset to push the content down from the top
+  var offset = $('.navbar').outerHeight();
 
-    $("#myNavbar a").on('click', function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      }
-    });
-
-    $('.carousel').each(function(){;
-        $(this).carousel();
-        var caption = $(this).children('div.col-xs-7').children('div.carousel-inner').children('div.item.active').children('div.carousel-caption');
-        console.log(caption);
-        var new_caption = $(this).children('div.col-xs-5').children('div.new-caption-area');
-        console.log(new_caption);
-        new_caption.html(caption.html());
-        caption.css('display', 'none');
-    });
-
-    jQuery(function ($) {
-
-      //This event is fired when the carousel has completed its slide transition.
-      $(".carousel").on('slid.bs.carousel', function (evt) {
-        var new_caption = $(this).children('div.col-xs-5').children('div.new-caption-area');
-        var caption = $(this).children('div.col-xs-7').children('div.carousel-inner').children('div.item.active').children('div.carousel-caption');
-        new_caption.slideUp(200, function () {
-          caption.css('display', 'none');
-          new_caption.html(caption.html());
-          new_caption.slideDown(600);
-        });
-      });
-    });
-
+  // Initialize my page to section1: About me
+  $('html, body').animate({
+    scrollTop: $("#section1").offset().top - offset
+    }, 200, function(){
+    window.location.hash = "#section1";
   });
-</script>
 
+  // recalculate offset for small size screen
+  $('#myNavbar').on('shown.bs.collapse', function(event) {
+    event.preventDefault();
+    offset = $('.navbar').outerHeight();
+  });
+
+  $('#myNavbar').on('hidden.bs.collapse', function(event) {
+    event.preventDefault();
+    offset = $('.navbar').outerHeight();
+  });
+
+  $('body').scrollspy({target: ".navbar", offset: 50});
+
+  $('#myNavbar a').on('click', function(event) {
+    event.preventDefault();
+    if (this.hash !== "") {
+      // event.preventDefault();
+
+      // The id of the section we want to go to.
+      var id = $(this).attr("href");
+
+      // Scroll to the section
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - offset
+      }, 800, function(){
+        window.location.hash = id;
+      });
+    }
+  });
+
+  $('.carousel').each(function(){;
+    $(this).carousel();
+    var caption = $(this).children('div.carousel-inner').children('div.item.active').children('div.carousel-caption');
+    console.log(caption);
+    var new_caption = $(this).parent().parent().children('div.carousel-new-caption').children('div.new-caption-area');
+    console.log(new_caption);
+    new_caption.html(caption.html());
+  });
+
+  jQuery(function ($) {
+    //This event is fired when the carousel has completed its slide transition.
+    $(".carousel").on('slid.bs.carousel', function (evt) {
+      var caption = $(this).children('div.carousel-inner').children('div.item.active').children('div.carousel-caption');
+      var new_caption = $(this).parent().parent().children('div.carousel-new-caption').children('div.new-caption-area');
+      // new_caption.slideUp(200, function () {
+      new_caption.html(caption.html());
+        // new_caption.slideDown(600);
+      // });
+    });
+  });
+
+});
+</script>
 </body>
 </html>
