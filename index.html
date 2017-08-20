@@ -103,12 +103,12 @@
   }
 
   #section1 {
-    padding: 50px 140px 50px 140px;
+    padding: 10px 140px 10px 140px;
     background-color: #687A8F;
   }
 
   #section1>.container-fluid {
-    padding: 30px;
+    padding: 20px 30px 20px 30px;
     background-color: #FFFFFF; 
     border-radius: 4px;
   }
@@ -211,6 +211,52 @@
     border-radius: 12px;
   }
 
+  /* skills section and skills-carousel */
+  #my-skills {
+   background-color: #687A8F; 
+  }
+
+  #skills-carousel {
+    padding: 0px 0px 25px 0px;
+    background-color: transparent;
+  }
+
+  #skills-inner {
+    margin-bottom: 0px;
+  }
+
+  #skills-inner,
+  #skills-inner>.active,
+  #skills-inner>.next,
+  #skills-inner>.prev  {
+    display:inline-block;
+  }
+
+  #skills-indicators {
+    bottom: -5px;
+  }
+
+  #skills-indicators > li {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 1px;
+    width: 60px;
+    height: 1px;
+  }
+
+  #skills-indicators .active{
+    background-color: #F67409;
+    border: 1px solid #F67409;
+    height: 5px;
+  }
+
+  .skills-item > img{
+    height: 60px;
+    /*width:auto; */
+    margin: 5px;
+  }
+
+
   /* landscape phones and portrait tablets */
   @media (max-width: 768px) {
     .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -255,6 +301,15 @@
       display: none;
     }
 
+    /* skills section and skills-carousel */
+    #skills-indicators > li {
+      width: 50px;
+    }
+
+    .skills-item > img{
+      height: 50px;
+    }
+
   }
 
   /* landscape phones and small devices */
@@ -270,7 +325,7 @@
       font-size: 100%;
     }
     #section1 {
-      padding: 20px 30px 20px 30px;
+      padding: 10px 30px 10px 30px;
     }
 
     #section1>.container-fluid {
@@ -296,6 +351,16 @@
       background-color: #F67409;
       border: 1px solid #F67409;
       border-radius: 8px;
+    }
+
+    /* skills section and skills-carousel */
+    #skills-indicators > li {
+      width: 30px;
+    }
+
+    .skills-item > img{
+      height: 25px;
+      margin: 2px;
     }
   }
 
@@ -357,7 +422,52 @@
     <p class="text-justify"> Now, I’m seeking to return to the work force as a software engineer and contribute the same focus and ownership over my work that has led me to success in my previous career.</p>
 
   </div>
+
 </div>  <!-- section1 -->
+
+<div id="my-skills" class="section">
+
+  <div id="skills-carousel" class="carousel slide">
+
+    <ol id="skills-indicators" class="carousel-indicators">
+      <li data-target="#skills-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#skills-carousel" data-slide-to="1"></li>
+    </ol>
+     
+    <div id="skills-inner" class="carousel-inner"  align="center">
+        
+      <div class="item active">
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/python_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/c++_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/js_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/html_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/css_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/flask_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/angular_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/mysql_logo.jpg" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/postgresql_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/ajax_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/jquery_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/json_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/d3_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/xpath_logo.png" alt="Image"/></span>
+      </div><!-- item -->
+       
+      <div class="item">
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/jinja2_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/sqlalchemy_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/redis_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/github_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/heroku_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/nginx_logo.png" alt="Image"/></span>
+        <span class="skills-item"><img class="img-responsive img-thumbnail" src="static/logo/selenium_logo.png" alt="Image"/></span>
+      </div><!--/item-->
+     
+    </div><!-- skills-inner-->
+
+  </div><!-- skills-carousel -->
+
+</div>
 
 <!-- Cinemania -->
 <div id="section21" class="container-fluid section">  <!-- section 21 -->
